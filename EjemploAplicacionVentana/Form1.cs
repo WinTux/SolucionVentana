@@ -22,9 +22,13 @@ namespace EjemploAplicacionVentana
             string user = txt_usuario.Text;
             string password = txt_password.Text;
             if (user.Equals("pepe") && password.Equals("abc"))
-                lbl_mensaje.Text = "Bienvenido Pepe";
+            {
+                Form2 ventanaGrande = new Form2(this);
+                ventanaGrande.Show();
+                this.Hide();
+            }
             else
-                lbl_mensaje.Text = "Error al ingresar sus datos";
+                lbl_mensaje.Text = admin +": Error al ingresar sus datos";
         }
     }
 }
