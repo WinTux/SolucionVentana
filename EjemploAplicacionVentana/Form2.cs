@@ -109,7 +109,7 @@ namespace EjemploAplicacionVentana
     }
 
     public class Matematica {
-        public static Absoluto(int x) {
+        public static int Absoluto(int x) {
             if (x >= 0)
                 return x;
             else
